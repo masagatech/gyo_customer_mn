@@ -1,0 +1,57 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.goyo.in.school.MyKids">
+
+
+    <ListView
+        android:visibility="gone"
+        android:id="@+id/lstmykids"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        android:divider="@null"
+        >
+    </ListView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btbtnAddNew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/ic_action_addperson"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/txtNodata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitStart"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/imgbanner" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:drawableTop="@drawable/ic_track_data"
+            android:gravity="center"
+            android:text="Opps! No Tracking added yet!\nClick plus button to add."
+            android:layout_below="@+id/imageView2"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+</FrameLayout>

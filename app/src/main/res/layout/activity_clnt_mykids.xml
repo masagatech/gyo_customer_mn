@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.goyo.in.school.clnt_mykidstrips">
+<!--<ListView-->
+    <!--android:id="@+id/lstmykids"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentLeft="true"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:divider="@null"-->
+    <!--&gt;-->
+
+    <de.halfbit.pinnedsection.PinnedSectionListView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/lstmykids"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        />
+<!--</ListView>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/txtNodata">
+
+        <TextView
+            android:id="@+id/textView"
+            android:drawableTop="@drawable/ic_track_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today there is no tracking set up for you!"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>
+

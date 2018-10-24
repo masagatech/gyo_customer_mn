@@ -1,0 +1,239 @@
+{
+  "project_info": {
+    "project_number": "826414646853",
+    "firebase_url": "https://goyo-57516.firebaseio.com",
+    "project_id": "goyo-57516",
+    "storage_bucket": "goyo-57516.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:826414646853:android:20136d51ecc3594d",
+        "android_client_info": {
+          "package_name": "com.goyo.goyorider"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "826414646853-dlqvkiqnlmgqmln6v4ki8agb39fln6sp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.goyo.goyorider",
+            "certificate_hash": "7af39ed0ec9cf4dba57cc6a1c458630ca353f0cd"
+          }
+        },
+        {
+          "client_id": "826414646853-f4f32730gilroj37bs8i4c9nb5d7cvap.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "826414646853-f4f32730gilroj37bs8i4c9nb5d7cvap.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1hNoVmqCSR6U7eIuxMfhD-Nyo8esGuHA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "826414646853-f4f32730gilroj37bs8i4c9nb5d7cvap.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "826414646853-kbib82egqkoibp8pvhual4elhejhsecj.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.goyo.GoYoMenu"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:826414646853:android:75ad1e50c550102e",
+        "android_client_info": {
+          "package_name": "com.goyo.in"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "826414646853-o97186cv129ajt9j6vlinjc880hc5bnr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.goyo.in",
+            "certificate_hash": "1f7ceb03df86e161081496d307f0f0843d677340"
+          }
+        },
+        {
+          "client_id": "826414646853-7i3gfbge8hhcnbmfo8gtn1e353l6hai9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.goyo.in",
+            "certificate_hash": "fdcef8fb8d6aefdbf4ab38ec8c3b6875bfa9451f"
+          }
+        },
+        {
+          "client_id": "826414646853-f4f32730gilroj37bs8i4c9nb5d7cvap.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "826414646853-f4f32730gilroj37bs8i4c9nb5d7cvap.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1hNoVmqCSR6U7eIuxMfhD-Nyo8esGuHA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "826414646853-f4f32730gilroj37bs8i4c9nb5d7cvap.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "826414646853-kbib82egqkoibp8pvhual4elhejhsecj.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.goyo.GoYoMenu"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:826414646853:android:dc26b6ba2967c23c",
+        "android_client_info": {
+          "package_name": "com.goyo.menu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "826414646853-1dc6bv0p9mhpbibsh73cnsp89j3hdj1g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.goyo.menu",
+            "certificate_hash": "5a4e9ce8eafa103f3c1061f9035474098fb44795"
+          }
+        },
+        {
+          "client_id": "826414646853-f4f32730gilroj37bs8i4c9nb5d7cvap.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "826414646853-f4f32730gilroj37bs8i4c9nb5d7cvap.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1hNoVmqCSR6U7eIuxMfhD-Nyo8esGuHA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "826414646853-f4f32730gilroj37bs8i4c9nb5d7cvap.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "826414646853-kbib82egqkoibp8pvhual4elhejhsecj.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.goyo.GoYoMenu"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:826414646853:android:8bc336be1bdbef1c",
+        "android_client_info": {
+          "package_name": "com.masaga.goyorider"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "826414646853-ekd6kblkns38o1u2gadhp5qeol09l71m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.masaga.goyorider",
+            "certificate_hash": "7af39ed0ec9cf4dba57cc6a1c458630ca353f0cd"
+          }
+        },
+        {
+          "client_id": "826414646853-f4f32730gilroj37bs8i4c9nb5d7cvap.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "826414646853-f4f32730gilroj37bs8i4c9nb5d7cvap.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1hNoVmqCSR6U7eIuxMfhD-Nyo8esGuHA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "826414646853-f4f32730gilroj37bs8i4c9nb5d7cvap.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "826414646853-kbib82egqkoibp8pvhual4elhejhsecj.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.goyo.GoYoMenu"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,277 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.goyo.in.fragment.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="vertical">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true" />
+
+        <me.relex.circleindicator.CircleIndicator
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12"
+        android:background="@color/bgHomeBack"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:cardElevation="1dp">
+
+                <TextView
+                    android:id="@+id/home_track_school"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?selectableItemBackground"
+                    android:drawableTop="@drawable/dash_school"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:text="School" />
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:cardElevation="1dp">
+
+                <TextView
+                    android:id="@+id/home_track_empl"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?selectableItemBackground"
+                    android:drawableTop="@drawable/dash_empl"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:text="Employee" />
+            </android.support.v7.widget.CardView>
+
+            <!--<android.support.v7.widget.CardView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--app:cardElevation="1dp"-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:layout_weight="1">-->
+
+            <!---->
+            <!--</android.support.v7.widget.CardView>-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:cardElevation="1dp">
+
+                <TextView
+                    android:id="@+id/home_order_food"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?selectableItemBackground"
+                    android:drawableTop="@drawable/dash_food"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:text="Food" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:cardElevation="1dp">
+
+                <TextView
+                    android:id="@+id/home_order_gloss"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?selectableItemBackground"
+                    android:drawableTop="@drawable/dash_groc"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:text="Grocery" />
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:cardElevation="1dp">
+
+                <TextView
+                    android:id="@+id/home_messenger_parcel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?selectableItemBackground"
+                    android:drawableTop="@drawable/dash_parcel"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:text="Parcel" />
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                app:cardElevation="1dp">
+
+                <TextView
+                    android:id="@+id/home_ride_auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?selectableItemBackground"
+                    android:drawableTop="@drawable/dash_auto"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:text="Auto" />
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                app:cardElevation="1dp">
+
+                <TextView
+                    android:id="@+id/home_ride_bike"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?selectableItemBackground"
+                    android:drawableTop="@drawable/dash_bike"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:text="Bike" />
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:cardElevation="1dp">
+
+                <TextView
+                    android:id="@+id/home_ride_truck"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?selectableItemBackground"
+                    android:drawableTop="@drawable/dash_truck"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:text="Truck" />
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:cardElevation="1dp">
+
+                <TextView
+                    android:id="@+id/home_messenger_medi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?selectableItemBackground"
+                    android:drawableTop="@drawable/dash_med"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:text="Medicine" />
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:cardElevation="1dp">
+
+                <TextView
+                    android:id="@+id/home_messenger_food"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?selectableItemBackground"
+                    android:drawableTop="@drawable/dash_parnt"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:text="Partners" />
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

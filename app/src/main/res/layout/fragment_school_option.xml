@@ -1,0 +1,157 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.goyo.in.fragment.SchoolOptionFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.goyo.in.fragment.SchoolOptionFragment">
+
+
+        <LinearLayout
+            android:id="@+id/first"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:clickable="true"
+                android:orientation="vertical"
+                app:cardElevation="2dp">
+
+                <FrameLayout
+                    android:id="@+id/btn_parentapp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectableItemBackground">
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/parentapp" />
+
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="30dp"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="center"
+                        android:text="Parents" />
+                </FrameLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:clickable="true"
+                android:orientation="vertical"
+                app:cardElevation="2dp">
+
+                <FrameLayout
+                    android:id="@+id/btn_teacherapp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectableItemBackground">
+
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/teacherapp" />
+
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/Exam_Count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="37dp"
+                        android:layout_marginTop="32dp"
+                        android:textColor="@color/white"
+                        android:textSize="15dp"
+                        android:visibility="gone"
+                        tools:text="1" />
+
+
+                    <TextView
+                        android:id="@+id/textView28"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="30dp"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="center"
+                        android:text="Teacher" />
+                </FrameLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <Button
+                android:id="@+id/btn_track"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="@dimen/margin_button"
+                android:background="@drawable/black_button"
+                android:drawableLeft="@drawable/ic_location"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:text="Track Vehicle"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite" />
+
+            <Button
+                android:id="@+id/btn_addmoney"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="@dimen/margin_button"
+                android:background="@drawable/black_button"
+                android:drawableLeft="@drawable/ic_action_add"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:text="Add Money 365"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>
