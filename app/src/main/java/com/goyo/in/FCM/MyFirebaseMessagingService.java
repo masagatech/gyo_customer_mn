@@ -1,10 +1,13 @@
 package com.goyo.in.FCM;
 
+import android.annotation.SuppressLint;
+import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
+import android.os.Build;
 import android.support.v4.app.NotificationCompat;
 import android.support.v4.content.LocalBroadcastManager;
 import android.util.Log;
@@ -34,6 +37,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
 
     @Override
     public void onMessageReceived(final RemoteMessage remoteMessage) {
+
         //notifData= String.valueOf(remoteMessage);
 
         //if(mType!=null & !mType.isEmpty()){
@@ -111,8 +115,8 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
             Log.e(TAG, "Notification Type = Null");
         }
 
-
-        SendMessageNotification();
+        // Edited by shine infosoft (add parameters)
+        SendMessageNotification(mTitle, mBody);
         // TODO(developer): Handle FCM messages here.
         Log.d(TAG, "data: " + remoteMessage.getData());
         if (remoteMessage.getData().size() > 0) {
@@ -127,8 +131,6 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         if (remoteMessage.getNotification() != null) {
             Log.d(TAG, "Message Notification Body: " + remoteMessage.getNotification().getBody());
         }
-
-
     }
 
     private void sendNotificationUserAddMoney() {
@@ -140,14 +142,26 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
       /*Uri defaultSoundUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);*/
         Uri defaultSoundUri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.notification_tone_2);
 
+        String CHANNEL_ID = "my_channel_01";// The id of the channel.
+        CharSequence name = getString(R.string.app_name);// The user-visible name of the channel.
+        int importance = NotificationManager.IMPORTANCE_HIGH;
+        NotificationChannel mChannel = null;
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+            mChannel = new NotificationChannel(CHANNEL_ID, name, importance);
+        }
+
         NotificationCompat.Builder notificationBuilder = (NotificationCompat.Builder) new NotificationCompat.Builder(this)
                 .setSmallIcon(R.drawable.ic_taxi)
                 .setContentTitle(mTitle)
                 .setAutoCancel(true)
                 .setSound(defaultSoundUri)
+                .setChannelId(CHANNEL_ID)
                 .setContentIntent(pendingIntent);
         NotificationManager notificationManager =
                 (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            notificationManager.createNotificationChannel(mChannel);
+        }
         notificationManager.notify(8/* ID of notification */, notificationBuilder.build());
     }
 
@@ -160,15 +174,27 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
                 PendingIntent.FLAG_ONE_SHOT);
        /*Uri defaultSoundUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);*/
         Uri defaultSoundUri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.notification_tone_2);
+
+        String CHANNEL_ID = "my_channel_01";// The id of the channel.
+        CharSequence name = getString(R.string.app_name);// The user-visible name of the channel.
+        int importance = NotificationManager.IMPORTANCE_HIGH;
+        NotificationChannel mChannel = null;
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+            mChannel = new NotificationChannel(CHANNEL_ID, name, importance);
+        }
         NotificationCompat.Builder notificationBuilder = (NotificationCompat.Builder) new NotificationCompat.Builder(this)
                 .setSmallIcon(R.drawable.ic_taxi)
                 .setContentTitle(mTitle)
                 .setContentText(mBody)
                 .setAutoCancel(true)
                 .setSound(defaultSoundUri)
+                .setChannelId(CHANNEL_ID)
                 .setContentIntent(pendingIntent);
         NotificationManager notificationManager =
                 (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            notificationManager.createNotificationChannel(mChannel);
+        }
         notificationManager.notify(01 /* ID of notification */, notificationBuilder.build());
     }
 
@@ -181,15 +207,28 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
                 PendingIntent.FLAG_ONE_SHOT);
       /*Uri defaultSoundUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);*/
         Uri defaultSoundUri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.notification_tone_2);
+
+        String CHANNEL_ID = "my_channel_01";// The id of the channel.
+        CharSequence name = getString(R.string.app_name);// The user-visible name of the channel.
+        int importance = NotificationManager.IMPORTANCE_HIGH;
+        NotificationChannel mChannel = null;
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+            mChannel = new NotificationChannel(CHANNEL_ID, name, importance);
+        }
+
         NotificationCompat.Builder notificationBuilder = (NotificationCompat.Builder) new NotificationCompat.Builder(this)
                 .setSmallIcon(R.drawable.ic_taxi)
                 .setContentTitle(mTitle)
                 .setContentText(mBody)
                 .setAutoCancel(true)
                 .setSound(defaultSoundUri)
+                .setChannelId(CHANNEL_ID)
                 .setContentIntent(pendingIntent);
         NotificationManager notificationManager =
                 (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            notificationManager.createNotificationChannel(mChannel);
+        }
         notificationManager.notify(02 /* ID of notification */, notificationBuilder.build());
     }
 
@@ -205,15 +244,28 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
                 PendingIntent.FLAG_ONE_SHOT);
        /*Uri defaultSoundUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);*/
         Uri defaultSoundUri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.notification_tone_2);
+
+        String CHANNEL_ID = "my_channel_01";// The id of the channel.
+        CharSequence name = getString(R.string.app_name);// The user-visible name of the channel.
+        int importance = NotificationManager.IMPORTANCE_HIGH;
+        NotificationChannel mChannel = null;
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+            mChannel = new NotificationChannel(CHANNEL_ID, name, importance);
+        }
+
         NotificationCompat.Builder notificationBuilder = (NotificationCompat.Builder) new NotificationCompat.Builder(this)
                 .setSmallIcon(R.drawable.ic_taxi)
                 .setContentTitle(mTitle)
                 .setContentText(mBody)
                 .setAutoCancel(true)
                 .setSound(defaultSoundUri)
+                .setChannelId(CHANNEL_ID)
                 .setContentIntent(pendingIntent);
         NotificationManager notificationManager =
                 (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            notificationManager.createNotificationChannel(mChannel);
+        }
         notificationManager.notify(03 /* ID of notification */, notificationBuilder.build());
     }
 
@@ -225,14 +277,26 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
                 PendingIntent.FLAG_ONE_SHOT);
         /*Uri defaultSoundUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);*/
         Uri defaultSoundUri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.notification_tone_2);
+
+        String CHANNEL_ID = "my_channel_01";// The id of the channel.
+        CharSequence name = getString(R.string.app_name);// The user-visible name of the channel.
+        int importance = NotificationManager.IMPORTANCE_HIGH;
+        NotificationChannel mChannel = null;
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+            mChannel = new NotificationChannel(CHANNEL_ID, name, importance);
+        }
         NotificationCompat.Builder notificationBuilder = (NotificationCompat.Builder) new NotificationCompat.Builder(this)
                 .setSmallIcon(R.drawable.ic_taxi)
                 .setContentTitle(mTitle)
                 .setAutoCancel(true)
                 .setSound(defaultSoundUri)
+                .setChannelId(CHANNEL_ID)
                 .setContentIntent(pendingIntent);
         NotificationManager notificationManager =
                 (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            notificationManager.createNotificationChannel(mChannel);
+        }
         notificationManager.notify(04 /* ID of notification */, notificationBuilder.build());
     }
 
@@ -243,15 +307,27 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
                 PendingIntent.FLAG_ONE_SHOT);
        /*Uri defaultSoundUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);*/
         Uri defaultSoundUri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.notification_tone_2);
+
+        String CHANNEL_ID = "my_channel_01";// The id of the channel.
+        CharSequence name = getString(R.string.app_name);// The user-visible name of the channel.
+        int importance = NotificationManager.IMPORTANCE_HIGH;
+        NotificationChannel mChannel = null;
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+            mChannel = new NotificationChannel(CHANNEL_ID, name, importance);
+        }
         NotificationCompat.Builder notificationBuilder = (NotificationCompat.Builder) new NotificationCompat.Builder(this)
                 .setSmallIcon(R.drawable.ic_taxi)
                 .setContentTitle(mTitle)
                 .setContentText(mBody)
                 .setAutoCancel(true)
+                .setChannelId(CHANNEL_ID)
                 .setSound(defaultSoundUri)
                 .setContentIntent(pendingIntent);
         NotificationManager notificationManager =
                 (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            notificationManager.createNotificationChannel(mChannel);
+        }
         notificationManager.notify(05, notificationBuilder.build());
          /* 05 is the ID of notification */
     }
@@ -291,11 +367,44 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         LocalBroadcastManager.getInstance(this).sendBroadcast(registrationComplete);
     }
 
-    private void SendMessageNotification() {
+    private void SendMessageNotification(String title, String body) {
         Intent registrationComplete = null;
         try {
             registrationComplete = new Intent(MESSAGE_NOTIFICATION)
                     .putExtra("i_ride_id", ride_id);
+
+            // edited by Shine Infosoft
+            // start
+            Intent intent = new Intent(this, MainActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            PendingIntent pendingIntent = PendingIntent.getActivity(this, 0 /* Request code */, intent, PendingIntent.FLAG_ONE_SHOT);
+            Uri defaultSoundUri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.notification_tone_2);
+
+            String CHANNEL_ID = "my_channel_01";// The id of the channel.
+            CharSequence name = getString(R.string.app_name);// The user-visible name of the channel.
+            int importance = NotificationManager.IMPORTANCE_HIGH;
+            NotificationChannel mChannel = null;
+            if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+                mChannel = new NotificationChannel(CHANNEL_ID, name, importance);
+            }
+
+            NotificationCompat.Builder notificationBuilder = (NotificationCompat.Builder) new NotificationCompat.Builder(this)
+                    .setSmallIcon(R.drawable.ic_taxi)
+                    .setContentTitle(title)
+                    .setContentText(body)
+                    .setAutoCancel(true)
+                    .setSound(defaultSoundUri)
+                    .setChannelId(CHANNEL_ID)
+                    .setContentIntent(pendingIntent);
+            NotificationManager notificationManager = (NotificationManager) this.getSystemService(Context.NOTIFICATION_SERVICE);
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                notificationManager.createNotificationChannel(mChannel);
+            }
+            notificationManager.notify(11 /* ID of notification */, notificationBuilder.build());
+
+            // End
+            //edited by Shine Infosoft
+
         } catch (Exception e) {
             Log.e("GCMRegIntentService", "Registration error");
             registrationComplete = new Intent(MESAGE_ERROR);
